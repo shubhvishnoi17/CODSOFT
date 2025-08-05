@@ -1,14 +1,14 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class SimpleGuessingGame {
+public class NumberGuessingGame {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        int playAgain; // Foe controling the replay
+        int playAgain; // to control replay
         do {
-            int numberToGuess = random.nextInt(100) + 1; // Random number between 1 to 100
+            int numberToGuess = random.nextInt(100) + 1; // random number between 1 to 100
             int guess;
             int attempts = 0;
             int maxAttempts = 5;
@@ -42,9 +42,7 @@ public class SimpleGuessingGame {
 
         } while (playAgain == 1);
 
-        System.out.println("Thanks For Playing!");
+        System.out.println("Thanks for playing!");
         scanner.close();
     }
 }
-
-is this code looks like it is written by human
